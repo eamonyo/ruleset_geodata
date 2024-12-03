@@ -188,10 +188,15 @@ jobs:
             mkdir -p "./tools/rules/${domains[i]}/"
             curl "${domains_download_url}/${domains[i]}.list" | grep -E 'DOMAIN,|DOMAIN-SUFFIX,|DOMAIN-KEYWORD' > "./tools/rules/${domains[i]}/${domains[i]}.yaml"
           done
-          mkdir -p "./tools/rules/fakeip-filter/"
-          curl "${domains_download_url}/fakeip-filter.list" > "./tools/rules/fakeip-filter/fakeip-filter.yaml"
-          mkdir -p "./tools/rules/fakeip-filter-lite/"
-          curl "${domains_download_url}/fakeip-filter-lite.list" > "./tools/rules/fakeip-filter-lite/fakeip-filter-lite.yaml"
+          mkdir -p ./tools/rules/fakeip-filter/
+          curl "${domains_download_url}/fakeip-filter.list" > ./tools/rules/fakeip-filter/fakeip-filter.yaml
+          mkdir -p ./tools/rules/fakeip-filter-lite/
+          curl "${domains_download_url}/fakeip-filter-lite.list" | grep -Ev 'DOMAIN-REGEX,|ntp|time|stun' > ./tools/rules/fakeip-filter-lite/fakeip-filter-lite.yaml
+          cat <<EOF >> ./tools/rules/fakeip-filter-lite/fakeip-filter-lite.yaml
+          DOMAIN-KEYWORD,ntp
+          DOMAIN-KEYWORD,time
+          DOMAIN-KEYWORD,stun
+          EOF
 
           for ((i = 0; i < 2; i++)); do
             mkdir -p "./tools/rules/${archs[i]}/"
