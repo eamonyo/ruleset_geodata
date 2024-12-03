@@ -44,14 +44,20 @@ jobs:
       - name: Generate `clash` geodata
         run: |
           mkdir -p ./community/mydata/
-          archs1=(fakeip-filter-lite private ads microsoft-cn apple-cn google-cn games-cn ai networktest netflix disney max primevideo appletv youtube tiktok bilibili proxy cn)
-          archs2=(fakeip-filter-lite private ads microsoft-cn apple-cn google-cn games-cn ai networktest proxy cn)
+          archs1=(private ads microsoft-cn apple-cn google-cn games-cn ai networktest netflix disney max primevideo appletv youtube tiktok bilibili proxy cn)
+          archs2=(private ads microsoft-cn apple-cn google-cn games-cn ai networktest proxy cn)
 
           # Generate `clash` geosite-all.dat
-          for ((i = 0; i < 19; i++)); do
+          for ((i = 0; i < 18; i++)); do
             curl -sSL "${domains_download_url}/${archs1[i]}.list" | grep -E 'DOMAIN,|DOMAIN-SUFFIX,|DOMAIN-KEYWORD' | sed -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,//' -e 's/^DOMAIN-KEYWORD,/keyword:/' > "./community/mydata/${archs1[i]}"
           done
           curl -sSL "${domains_download_url}/fakeip-filter.list" | sed -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,//' -e 's/^DOMAIN-KEYWORD,/keyword:/' -e 's/^DOMAIN-REGEX,/regexp:/' > ./community/mydata/fakeip-filter
+          curl -sSL "${domains_download_url}/fakeip-filter-lite.list" | grep -Ev 'DOMAIN-REGEX,|ntp|time|stun' | sed -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,//' > ./community/mydata/fakeip-filter-lite
+          cat <<EOF >> ./community/mydata/fakeip-filter-lite
+          keyword:ntp
+          keyword:time
+          keyword:stun
+          EOF
           cd ./community/
           go run ./ --datapath=./mydata/ --outputname geosite-all.dat
 
@@ -61,10 +67,16 @@ jobs:
 
           # Generate `clash` geosite.dat
           rm -f ./mydata/*
-          for ((i = 0; i < 11; i++)); do
+          for ((i = 0; i < 10; i++)); do
             curl -sSL "${domains_download_url}/${archs2[i]}.list" | grep -E 'DOMAIN,|DOMAIN-SUFFIX,|DOMAIN-KEYWORD' | sed -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,//' -e 's/^DOMAIN-KEYWORD,/keyword:/' > "./mydata/${archs2[i]}"
           done
           curl -sSL "${domains_download_url}/fakeip-filter.list" | sed -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,//' -e 's/^DOMAIN-KEYWORD,/keyword:/' -e 's/^DOMAIN-REGEX,/regexp:/' > ./mydata/fakeip-filter
+          curl -sSL "${domains_download_url}/fakeip-filter-lite.list" | grep -Ev 'DOMAIN-REGEX,|ntp|time|stun' | sed -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,//' > ./mydata/fakeip-filter-lite
+          cat <<EOF >> ./mydata/fakeip-filter-lite
+          keyword:ntp
+          keyword:time
+          keyword:stun
+          EOF
           go run ./ --datapath=./mydata/ --outputname geosite.dat
 
           # Generate `clash` geosite-lite.dat
@@ -118,7 +130,7 @@ jobs:
         run: |
           mkdir -p ./clash-ruleset/
           domains=(private ads microsoft-cn apple-cn google-cn games-cn ai netflix disney max primevideo appletv youtube tiktok bilibili proxy cn)
-          archs=(fakeip-filter-lite applications networktest)
+          archs=(applications networktest)
           ips=(netflixip telegramip privateip cnip)
 
           # Generate `clash` rule-set (yaml)
@@ -128,8 +140,10 @@ jobs:
           done
           echo 'payload:' > "./clash-ruleset/fakeip-filter.yaml"
           curl -sSL "${domains_download_url}/fakeip-filter.list" | sed -e "s/^DOMAIN,/  - '/" -e "s/^DOMAIN-SUFFIX,/  - '+\./" -e "s/^DOMAIN-REGEX,/  - '/" -e "s/'\./'/" -e "s/$/'/" >> ./clash-ruleset/fakeip-filter.yaml
+          echo 'payload:' > "./clash-ruleset/fakeip-filter-lite.yaml"
+          curl -sSL "${domains_download_url}/fakeip-filter-lite.list" | sed -e "s/^DOMAIN,/  - '/" -e "s/^DOMAIN-SUFFIX,/  - '+\./" -e "s/^DOMAIN-REGEX,/  - '/" -e "s/'\./'/" -e "s/$/'/" >> ./clash-ruleset/fakeip-filter-lite.yaml
 
-          for ((i = 0; i < 3; i++)); do
+          for ((i = 0; i < 2; i++)); do
             echo 'payload:' > "./clash-ruleset/${archs[i]}.yaml"
             curl -sSL "${domains_download_url}/${archs[i]}.list" | sed 's/^/  - /' >> "./clash-ruleset/${archs[i]}.yaml"
           done
@@ -144,8 +158,9 @@ jobs:
             curl -sSL "${domains_download_url}/${domains[i]}.list" | grep -E 'DOMAIN,|DOMAIN-SUFFIX,' | sed -e 's/^DOMAIN,//' -e 's/^DOMAIN-SUFFIX,/+\./' > "./clash-ruleset/${domains[i]}.list"
           done
           curl -sSL "${domains_download_url}/fakeip-filter.list" | sed -e 's/^DOMAIN,//' -e 's/^DOMAIN-SUFFIX,/+\./' -e 's/^DOMAIN-REGEX,//' -e 's/^\.//' > ./clash-ruleset/fakeip-filter.list
+          curl -sSL "${domains_download_url}/fakeip-filter-lite.list" | sed -e 's/^DOMAIN,//' -e 's/^DOMAIN-SUFFIX,/+\./' -e 's/^DOMAIN-REGEX,//' -e 's/^\.//' > ./clash-ruleset/fakeip-filter-lite.list
 
-          for ((i = 0; i < 3; i++)); do
+          for ((i = 0; i < 2; i++)); do
             curl -sSL "${domains_download_url}/${archs[i]}.list"  > "./clash-ruleset/${archs[i]}.list"
           done
 
@@ -160,6 +175,8 @@ jobs:
           done
           mkdir -p "./tools/domains/fakeip-filter/"
           curl -sSL "${domains_download_url}/fakeip-filter.list" | sed -e 's/^DOMAIN,//' -e 's/^DOMAIN-SUFFIX,/+\./' -e 's/^DOMAIN-REGEX,//' -e 's/^\.//' > ./tools/domains/fakeip-filter/fakeip-filter.list
+          mkdir -p "./tools/domains/fakeip-filter-lite/"
+          curl -sSL "${domains_download_url}/fakeip-filter-lite.list" | sed -e 's/^DOMAIN,//' -e 's/^DOMAIN-SUFFIX,/+\./' -e 's/^DOMAIN-REGEX,//' -e 's/^\.//' > ./tools/domains/fakeip-filter-lite/fakeip-filter-lite.list
 
           for ((i = 0; i < 4; i++)); do
             mkdir -p "./tools/ips/${ips[i]}/"
@@ -173,8 +190,10 @@ jobs:
           done
           mkdir -p "./tools/rules/fakeip-filter/"
           curl "${domains_download_url}/fakeip-filter.list" > "./tools/rules/fakeip-filter/fakeip-filter.yaml"
+          mkdir -p "./tools/rules/fakeip-filter-lite/"
+          curl "${domains_download_url}/fakeip-filter-lite.list" > "./tools/rules/fakeip-filter-lite/fakeip-filter-lite.yaml"
 
-          for ((i = 0; i < 3; i++)); do
+          for ((i = 0; i < 2; i++)); do
             mkdir -p "./tools/rules/${archs[i]}/"
             curl "${domains_download_url}/${archs[i]}.list" > "./tools/rules/${archs[i]}/${archs[i]}.yaml"
           done
