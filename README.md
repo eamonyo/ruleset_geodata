@@ -1,9 +1,11 @@
-# 注：单独给 sing-box v1.9.0 版本的内核生成了[规则集](https://github.com/DustinWin/ruleset_geodata/tree/sing-box-ruleset-compatible)
+# 定制适合 Clash 内核、[mihomo 内核](https://github.com/MetaCubeX/mihomo)和 [sing-box 内核](https://github.com/SagerNet/sing-box)的 ruleset&geodata 文件
 
-# 一、 geodata 规则集文件说明
+---
+
+# 一、 geodata 文件说明
 ## 1. 文件类型
-① Clash geodata 规则集文件，包括：geosite.dat、geoip.dat、Country.mmdb 和 geoip.metadb、ASN.mmdb（仅限 [mihomo 内核](https://github.com/MetaCubeX/mihomo)）等  
-② [sing-box](https://github.com/SagerNet/sing-box) geodata 规则集文件，包括：geosite.db 和 geoip.db 等
+① Clash 和 [mihomo](https://github.com/MetaCubeX/mihomo) geodata 文件，包括：geosite.dat、geoip.dat、Country.mmdb 和 geoip.metadb、ASN.mmdb（仅限 mihomo 内核）等  
+② [sing-box](https://github.com/SagerNet/sing-box) geodata 文件，包括：geosite.db 和 geoip.db 等
 ## 2. 数据源
 ① 每天凌晨 3 点（北京时间 UTC+8）自动构建，根据 [Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat) 和 [Loyalsoldier/geoip](https://github.com/Loyalsoldier/geoip) 进行深度定制，可点击查看包含的[域名列表](https://github.com/DustinWin/domain-list-custom/tree/domains)和 [IP 段列表](https://github.com/DustinWin/geoip/tree/ips)  
 ② `geosite,fakeip-filter,📌 fakeip 过滤` 源采用 [ShellCrash/public/fake_ip_filter.list](https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list)（搭载 mihomo 内核或 [sing-box PuerNya 版内核](https://github.com/PuerNya/sing-box/tree/building)时，可使该规则集内的域名走 realip）  
@@ -224,8 +226,8 @@ curl -o %APPDATA%\io.github.clash-verge-rev.clash-verge-rev\ASN.mmdb -L https://
 
 # 二、 ruleset 规则集文件说明
 ## 1. 文件类型
-① Clash ruleset 规则集文件，格式为 `.yaml`（`format: yaml`）、`.list`（`format: text`） 和 `.mrs`（`format: mrs`）  
-② [sing-box](https://github.com/SagerNet/sing-box) ruleset 规则集文件，格式有 `.srs`（`"format": "binary"`）和 `.json`（`"format": "source"`）
+① Clash 和 [mihomo](https://github.com/MetaCubeX/mihomo) rule-set 规则集文件，格式为 `.yaml`（`format: yaml`）、`.list`（`format: text`） 和 `.mrs`（`format: mrs`）  
+② [sing-box](https://github.com/SagerNet/sing-box) rule_set 规则集文件，格式有 `.srs`（`"format": "binary"`）和 `.json`（`"format": "source"`）
 ## 2. 数据源
 ① 每天凌晨 3 点（北京时间 UTC+8）自动构建，根据 [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules) 和 [Loyalsoldier/geoip](https://github.com/Loyalsoldier/geoip) 进行深度定制，可点击查看包含的[域名列表](https://github.com/DustinWin/domain-list-custom/tree/domains)和 [IP 段列表](https://github.com/DustinWin/geoip/tree/ips)  
 ② `rule-set,fakeip-filter,📌 fakeip 过滤` 源采用 [ShellCrash/public/fake_ip_filter.list](https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list)（搭载 mihomo 内核或 sing-box PuerNya 版内核时，可使该规则集内的域名走 realip）  
