@@ -12,29 +12,30 @@
 ③ `geosite,fakeip-filter-lite,📌 fakeip 过滤` 源采用 [ShellCrash/public/fake_ip_filter.list](https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list)，仅保留主要域名（推荐搭配 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) 且 DNS 配置 mix 混合模式时使用）  
 ④ `geosite,private,🔒 私有网络` 源采用 [v2fly/domain-list-community/private](https://github.com/v2fly/domain-list-community/blob/master/data/private) 和 [blackmatrix7/ios_rule_script/Lan](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Lan)（仅域名）组合，并添加主流 [Dashboard 在线面板](https://github.com/DustinWin/proxy-tools/releases/tag/Dashboard)域名（`yacd.haishan.me`、`yacd.metacubex.one`、`d.metacubex.one`、`metacubex.github.io`、`metacubexd.pages.dev` 和 `board.zash.run.place`）  
 ⑤ `geosite,ads,🛑 广告域名` 源采用 [privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)  
-⑥ `geosite,trackerslist,📥 Trackerslist` 源采用 [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅域名）和 [ngosang/trackerslist](https://github.com/ngosang/trackerslist/blob/master/trackers_all.txt) 组合  
-⑦ `geosite,microsoft-cn,🪟 微软服务` 源采用 [v2fly/domain-list-community/microsoft@cn](https://github.com/v2fly/domain-list-community/blob/master/data/microsoft)  
-⑧ `geosite,apple-cn,🍎 苹果服务` 源采用 [v2fly/domain-list-community/apple@cn](https://github.com/v2fly/domain-list-community/blob/master/data/apple)  
-⑨ `geosite,google-cn,🇬 谷歌服务` 源采用 [v2fly/domain-list-community/google@cn](https://github.com/v2fly/domain-list-community/blob/master/data/google)  
-⑩ `geosite,games-cn,🎮 游戏服务` 源采用 [v2fly/domain-list-community/category-games@cn](https://github.com/v2fly/domain-list-community/blob/master/data/category-games)、[blackmatrix7/ios_rule_script/SteamCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/SteamCN) 和 [blackmatrix7/ios_rule_script/GameDownloadCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Game/GameDownloadCN) 组合  
-⑪ `geosite,netflix,🎥 奈飞视频` 源采用 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)  
-⑫ `geosite,disney,📽️ 迪士尼+` 源采用 [blackmatrix7/ios_rule_script/Disney](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Disney)  
-⑬ `geosite,max,🎞️ Max` 源采用 [blackmatrix7/ios_rule_script/HBO](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/HBO)  
-⑭ `geosite,primevideo,🎬 Prime Video` 源采用 [blackmatrix7/ios_rule_script/PrimeVideo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/PrimeVideo)  
-⑮ `geosite,appletv,🍎 Apple TV+` 源采用 [blackmatrix7/ios_rule_script/AppleTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AppleTV)  
-⑯ `geosite,youtube,📹 油管视频` 源采用 [blackmatrix7/ios_rule_script/YouTube](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/YouTube)  
-⑰ `geosite,tiktok,🎵 TikTok` 源采用 [blackmatrix7/ios_rule_script/TikTok](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/TikTok)  
-⑱ `geosite,bilibili,📺 哔哩哔哩` 源采用 [blackmatrix7/ios_rule_script/BiliBili](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/BiliBili)  
-⑲ `geosite,ai,🤖 人工智能` 源采用 [blackmatrix7/ios_rule_script/OpenAI](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/OpenAI)、[blackmatrix7/ios_rule_script/Copilot](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Copilot)、[blackmatrix7/ios_rule_script/Gemini](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Gemini) 和 [blackmatrix7/ios_rule_script/Claude](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Claude) 组合  
-⑳ `geosite,networktest,📈 网络测试` 源采用 [v2fly/domain-list-community/speedtest](https://github.com/v2fly/domain-list-community/blob/master/data/speedtest)、[blackmatrix7/ios_rule_script/Speedtest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Speedtest) 和 IPv6 测试域名关键字（`keyword`，包括：`ipv6-test`、`test-ipv6`、`ipv6test` 和 `testipv6`）组合  
+⑥ `geosite,microsoft-cn,🪟 微软服务` 源采用 [v2fly/domain-list-community/microsoft@cn](https://github.com/v2fly/domain-list-community/blob/master/data/microsoft)  
+⑦ `geosite,apple-cn,🍎 苹果服务` 源采用 [v2fly/domain-list-community/apple@cn](https://github.com/v2fly/domain-list-community/blob/master/data/apple)  
+⑧ `geosite,google-cn,🇬 谷歌服务` 源采用 [v2fly/domain-list-community/google@cn](https://github.com/v2fly/domain-list-community/blob/master/data/google)  
+⑨ `geosite,games-cn,🎮 游戏服务` 源采用 [v2fly/domain-list-community/category-games@cn](https://github.com/v2fly/domain-list-community/blob/master/data/category-games)、[blackmatrix7/ios_rule_script/SteamCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/SteamCN) 和 [blackmatrix7/ios_rule_script/GameDownloadCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Game/GameDownloadCN) 组合  
+⑩ `geosite,netflix,🎥 奈飞视频` 源采用 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)  
+⑪ `geosite,disney,📽️ 迪士尼+` 源采用 [blackmatrix7/ios_rule_script/Disney](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Disney)  
+⑫ `geosite,max,🎞️ Max` 源采用 [blackmatrix7/ios_rule_script/HBO](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/HBO)  
+⑬ `geosite,primevideo,🎬 Prime Video` 源采用 [blackmatrix7/ios_rule_script/PrimeVideo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/PrimeVideo)  
+⑭ `geosite,appletv,🍎 Apple TV+` 源采用 [blackmatrix7/ios_rule_script/AppleTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AppleTV)  
+⑮ `geosite,youtube,📹 油管视频` 源采用 [blackmatrix7/ios_rule_script/YouTube](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/YouTube)  
+⑯ `geosite,tiktok,🎵 TikTok` 源采用 [blackmatrix7/ios_rule_script/TikTok](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/TikTok)  
+⑰ `geosite,bilibili,📺 哔哩哔哩` 源采用 [blackmatrix7/ios_rule_script/BiliBili](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/BiliBili)  
+⑱ `geosite,ai,🤖 人工智能` 源采用 [blackmatrix7/ios_rule_script/OpenAI](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/OpenAI)、[blackmatrix7/ios_rule_script/Copilot](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Copilot)、[blackmatrix7/ios_rule_script/Gemini](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Gemini) 和 [blackmatrix7/ios_rule_script/Claude](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Claude) 组合  
+⑲ `geosite,networktest,📈 网络测试` 源采用 [v2fly/domain-list-community/speedtest](https://github.com/v2fly/domain-list-community/blob/master/data/speedtest)、[blackmatrix7/ios_rule_script/Speedtest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Speedtest) 和 IPv6 测试域名关键字（`keyword`，包括：`ipv6-test`、`test-ipv6`、`ipv6test` 和 `testipv6`）组合  
+⑳ `geosite,tracker,📥 Tracker` 源采用 [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅域名）和 [ngosang/trackerslist](https://github.com/ngosang/trackerslist/blob/master/trackers_all.txt) 组合  
 ㉑ `geosite,tld-proxy,🧱 代理顶级域名` 源采用 [v2fly/domain-list-community/tld-!cn](https://github.com/v2fly/domain-list-community/blob/master/data/tld-!cn)  
 ㉒ `geosite,proxy,🧱 代理域名` 源采用 [v2fly/domain-list-community/geolocation-!cn](https://github.com/v2fly/domain-list-community/blob/master/data/geolocation-!cn)（删除了带有 `@cn` 和 `@ads` 的域名，并新增了 [v2fly/domain-list-community/cn](https://github.com/v2fly/domain-list-community/blob/master/data/cn) 中带有 `@!cn` 的域名）、[gfwlist](https://github.com/gfwlist/gfwlist) 和 [blackmatrix7/ios_rule_script/Global](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Global) 组合  
 ㉓ `geosite,tld-cn,🛡️ 直连顶级域名` 源采用 [v2fly/domain-list-community/tld-cn](https://github.com/v2fly/domain-list-community/blob/master/data/tld-cn)  
 ㉔ `geosite,cn,🛡️ 直连域名` 源采用 [v2fly/domain-list-community/cn](https://github.com/v2fly/domain-list-community/blob/master/data/cn)（删除了带有 `@!cn` 和 `@ads` 的域名，并新增了 v2fly/domain-list-community/geolocation-!cn 中带有 `@cn` 的域名）和 [blackmatrix7/ios_rule_script/ChinaMax](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/ChinaMax)（仅域名）组合  
-㉕ `geoip,private,🔒 私有网络` 源采用 [DustinWin/geoip/config.json](https://github.com/DustinWin/geoip/blob/master/config.json) 中的 `input.type:private` 和 [TrackersList](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅 IP）组合  
-㉖ `geoip,cn,🀄️ 直连 IP` 源采用 [GeoLite2-Country-CSV/CN](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)、[17mon/china_ip_list](https://github.com/17mon/china_ip_list)、[gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)、[APNIC/CN](http://ftp.apnic.net/stats/apnic/delegated-apnic-latest) 和 [blackmatrix7/ios_rule_script/ChinaASN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/ChinaASN) 组合  
-㉗ `geoip,netflix,🎥 奈飞视频` 源采用 [GeoLite2-ASN-CSV/Netflix](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)（Netflix_IP.txt）组合  
-㉘ `geoip,telegram,📲 电报消息` 源采用 [GeoLite2-ASN-CSV/Telegram](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [Telegram IP 段](https://core.telegram.org/resources/cidr.txt)组合
+㉕ `geoip,netflix,🎥 奈飞视频` 源采用 [GeoLite2-ASN-CSV/Netflix](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)（Netflix_IP.txt）组合  
+㉖ `geoip,tracker,📥 Tracker` 源采用 [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅 IP）和 [ngosang/trackerslist](https://github.com/ngosang/trackerslist/blob/master/trackers_all_ip.txt) 组合  
+㉗ `geoip,telegram,📲 电报消息` 源采用 [GeoLite2-ASN-CSV/Telegram](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [Telegram IP 段](https://core.telegram.org/resources/cidr.txt)组合  
+㉘ `geoip,private,🔒 私有网络` 源采用 [DustinWin/geoip/config.json](https://github.com/DustinWin/geoip/blob/master/config.json) 中的 `input.type:private` 和 [TrackersList](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅 IP）组合  
+㉙ `geoip,cn,🀄️ 直连 IP` 源采用 [GeoLite2-Country-CSV/CN](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)、[17mon/china_ip_list](https://github.com/17mon/china_ip_list)、[gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)、[APNIC/CN](http://ftp.apnic.net/stats/apnic/delegated-apnic-latest) 和 [blackmatrix7/ios_rule_script/ChinaASN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/ChinaASN) 组合
 ## 3. 文件下载
 **规则集文件包含的规则和下载地址对应关系如下表：**
 <table>
@@ -47,56 +48,56 @@
   </tr>
   <tr>
     <td>geosite-all.dat</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite-all.dat">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/geosite-all.dat">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite-all.dat">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite-all.db</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite-all.db">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box/geosite-all.db">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite-all.db">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite-all-lite.dat</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite-all-lite.dat">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/geosite-all-lite.dat">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite-all-lite.dat">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite-all-lite.db</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>netflix</code>、<code>disney</code>、<code>max</code>、<code>primevideo</code>、<code>appletv</code>、<code>youtube</code>、<code>tiktok</code>、<code>bilibili</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite-all-lite.db">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box/geosite-all-lite.db">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite-all-lite.db">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite.dat</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite.dat">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/geosite.dat">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite.dat">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite.db</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<code>ads</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite.db">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box/geosite.db">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite.db">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite-lite.dat</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite-lite.dat">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/geosite-lite.dat">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geosite-lite.dat">点此下载</a></td>
   </tr>
   <tr>
     <td>geosite-lite.db</td>
-    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>trackerslist</code>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
+    <td><code>fakeip-filter</code>、<code>fakeip-filter-lite</code>、<code>private</code>、<del><code>ads</code></del>、<code>microsoft-cn</code>、<code>apple-cn</code>、<code>google-cn</code>、<code>games-cn</code>、<code>ai</code>、<code>networktest</code>、<code>tracker</code>、<code>tld-proxy</code>、<code>proxy</code>、<code>tld-cn</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite-lite.db">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box/geosite-lite.db">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box/geosite-lite.db">点此下载</a></td>
@@ -135,7 +136,7 @@
   </tr>
   <tr>
     <td>geoip.dat</td>
-    <td rowspan="4"><code>private</code>、<code>cn</code>、<code>netflix</code> 和 <code>telegram</code></td>
+    <td rowspan="4"><code>netflix</code>、<code>tracker</code>、<code>telegram</code>、<code>private</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geoip.dat">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/geoip.dat">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geoip.dat">点此下载</a></td>
@@ -160,7 +161,7 @@
   </tr>
   <tr>
     <td>geoip-lite.dat</td>
-    <td rowspan="4"><code>private</code>、<code>cn</code>、<del><code>netflix</code></del> 和 <code>telegram</code></td>
+    <td rowspan="4"><del><code>netflix</code></del>、<code>tracker</code>、<code>telegram</code>、<code>private</code> 和 <code>cn</code></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geoip-lite.dat">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/geoip-lite.dat">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/geoip-lite.dat">点此下载</a></td>
@@ -185,7 +186,7 @@
   </tr>
   <tr>
     <td>Country-ASN.mmdb</td>
-    <td><del><code>private</code></del>、<del><code>cn</code></del>、<code>netflix</code> 和 <code>telegram</code>，具体可<a href="https://github.com/DustinWin/geoip/blob/master/asn.csv">点此查看</a></td>
+    <td><code>netflix</code>、<del><code>tracker</code></del>、<code>telegram</code>、<del><code>private</code> 和 <code>cn</code></del>，具体可<a href="https://github.com/DustinWin/geoip/blob/master/asn.csv">点此查看</a></td>
     <td><a href="https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/Country-ASN.mmdb">点此下载</a></td>
     <td><a href="https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo/Country-ASN.mmdb">点此下载</a></td>
     <td><a href="https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo/Country-ASN.mmdb">点此下载</a></td>
@@ -234,32 +235,33 @@ curl -o %APPDATA%\io.github.clash-verge-rev.clash-verge-rev\ASN.mmdb -L https://
 ① 每天凌晨 3 点（北京时间 UTC+8）自动构建，根据 [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules) 和 [Loyalsoldier/geoip](https://github.com/Loyalsoldier/geoip) 进行深度定制，可点击查看包含的[域名列表](https://github.com/DustinWin/domain-list-custom/tree/domains)和 [IP 段列表](https://github.com/DustinWin/geoip/tree/ips)  
 ② `rule-set,fakeip-filter,📌 fakeip 过滤` 源采用 [ShellCrash/public/fake_ip_filter.list](https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list)（搭载 mihomo 内核或 sing-box PuerNya 版内核时，可使该规则集内的域名走 realip）  
 ③ `rule-set,fakeip-filter-lite,📌 fakeip 过滤` 源采用 [ShellCrash/public/fake_ip_filter.list](https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list)，仅保留主要域名（推荐搭配 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) 且 DNS 配置 mix 混合模式时使用）  
-④ `rule-set,private,🔒 私有网络` 源采用 [v2fly/domain-list-community/private](https://github.com/v2fly/domain-list-community/blob/master/data/private) 和 [blackmatrix7/ios_rule_script/Lan](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Lan)（仅域名）组合，并添加主流 [Dashboard 在线面板](https://github.com/DustinWin/proxy-tools/releases/tag/Dashboard)域名（`yacd.haishan.me`、`yacd.metacubex.one`、`d.metacubex.one`、`metacubex.github.io`、`metacubexd.pages.dev`和 `board.zash.run.place`）  
-⑤ `rule-set,ads,🛑 广告域名` 源采用 [privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)  
-⑥ `rule-set,trackerslist,📥 Trackerslist` 源采用 [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅域名）和 [ngosang/trackerslist](https://github.com/ngosang/trackerslist/blob/master/trackers_all.txt) 组合  
-⑦ `rule-set,applications,🖥️ 直连软件` 源采用 [blackmatrix7/ios_rule_script/Download](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Download) 和 [Loyalsoldier/clash-rules/applications.txt](https://github.com/Loyalsoldier/clash-rules/blob/release/applications.txt) 组合  
-⑧ `rule-set,microsoft-cn,🪟 微软服务` 源采用 [v2fly/domain-list-community/microsoft@cn](https://github.com/v2fly/domain-list-community/blob/master/data/microsoft)  
-⑨ `rule-set,apple-cn,🍎 苹果服务` 源采用 [v2fly/domain-list-community/apple@cn](https://github.com/v2fly/domain-list-community/blob/master/data/apple)  
-⑩ `rule-set,google-cn,🇬 谷歌服务` 源采用 [v2fly/domain-list-community/google@cn](https://github.com/v2fly/domain-list-community/blob/master/data/google)  
-⑪ `rule-set,games-cn,🎮 游戏服务` 源采用 [v2fly/domain-list-community/category-games@cn](https://github.com/v2fly/domain-list-community/blob/master/data/category-games)、[blackmatrix7/ios_rule_script/SteamCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/SteamCN) 和 [blackmatrix7/ios_rule_script/GameDownloadCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Game/GameDownloadCN) 组合  
-⑫ `rule-set,netflix,🎥 奈飞视频` 源采用 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)（仅域名）  
-⑬ `rule-set,disney,📽️ 迪士尼+` 源采用 [blackmatrix7/ios_rule_script/Disney](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Disney)  
-⑭ `rule-set,max,🎞️ Max` 源采用 [blackmatrix7/ios_rule_script/HBO](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/HBO)  
-⑮ `rule-set,primevideo,🎬 Prime Video` 源采用 [blackmatrix7/ios_rule_script/PrimeVideo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/PrimeVideo)  
-⑯ `rule-set,appletv,🍎 Apple TV+` 源采用 [blackmatrix7/ios_rule_script/AppleTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AppleTV)  
-⑰ `rule-set,youtube,📹 油管视频` 源采用 [blackmatrix7/ios_rule_script/YouTube](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/YouTube)  
-⑱ `rule-set,tiktok,🎵 TikTok` 源采用 [blackmatrix7/ios_rule_script/TikTok](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/TikTok)  
-⑲ `rule-set,bilibili,📺 哔哩哔哩` 源采用 [blackmatrix7/ios_rule_script/BiliBili](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/BiliBili)  
-⑳ `rule-set,ai,🤖 人工智能` 源采用 [blackmatrix7/ios_rule_script/OpenAI](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/OpenAI)、[blackmatrix7/ios_rule_script/Copilot](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Copilot)、[blackmatrix7/ios_rule_script/Gemini](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Gemini) 和 [blackmatrix7/ios_rule_script/Claude](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Claude) 组合  
-㉑ `rule-set,networktest,📈 网络测试` 源采用 [v2fly/domain-list-community/speedtest](https://github.com/v2fly/domain-list-community/blob/master/data/speedtest)、[blackmatrix7/ios_rule_script/Speedtest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Speedtest) 和 IPv6 测试域名关键字（`keyword`，包括：`ipv6-test`、`test-ipv6`、`ipv6test` 和 `testipv6`）组合  
+④ `rule-set,applications,🖥️ 直连软件` 源采用 [blackmatrix7/ios_rule_script/Download](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Download) 和 [Loyalsoldier/clash-rules/applications.txt](https://github.com/Loyalsoldier/clash-rules/blob/release/applications.txt) 组合  
+⑤ `rule-set,private,🔒 私有网络` 源采用 [v2fly/domain-list-community/private](https://github.com/v2fly/domain-list-community/blob/master/data/private) 和 [blackmatrix7/ios_rule_script/Lan](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Lan)（仅域名）组合，并添加主流 [Dashboard 在线面板](https://github.com/DustinWin/proxy-tools/releases/tag/Dashboard)域名（`yacd.haishan.me`、`yacd.metacubex.one`、`d.metacubex.one`、`metacubex.github.io`、`metacubexd.pages.dev`和 `board.zash.run.place`）  
+⑥ `rule-set,ads,🛑 广告域名` 源采用 [privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)  
+⑦ `rule-set,microsoft-cn,🪟 微软服务` 源采用 [v2fly/domain-list-community/microsoft@cn](https://github.com/v2fly/domain-list-community/blob/master/data/microsoft)  
+⑧ `rule-set,apple-cn,🍎 苹果服务` 源采用 [v2fly/domain-list-community/apple@cn](https://github.com/v2fly/domain-list-community/blob/master/data/apple)  
+⑨ `rule-set,google-cn,🇬 谷歌服务` 源采用 [v2fly/domain-list-community/google@cn](https://github.com/v2fly/domain-list-community/blob/master/data/google)  
+⑩ `rule-set,games-cn,🎮 游戏服务` 源采用 [v2fly/domain-list-community/category-games@cn](https://github.com/v2fly/domain-list-community/blob/master/data/category-games)、[blackmatrix7/ios_rule_script/SteamCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/SteamCN) 和 [blackmatrix7/ios_rule_script/GameDownloadCN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Game/GameDownloadCN) 组合  
+⑪ `rule-set,netflix,🎥 奈飞视频` 源采用 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)（仅域名）  
+⑫ `rule-set,disney,📽️ 迪士尼+` 源采用 [blackmatrix7/ios_rule_script/Disney](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Disney)  
+⑬ `rule-set,max,🎞️ Max` 源采用 [blackmatrix7/ios_rule_script/HBO](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/HBO)  
+⑭ `rule-set,primevideo,🎬 Prime Video` 源采用 [blackmatrix7/ios_rule_script/PrimeVideo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/PrimeVideo)  
+⑮ `rule-set,appletv,🍎 Apple TV+` 源采用 [blackmatrix7/ios_rule_script/AppleTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AppleTV)  
+⑯ `rule-set,youtube,📹 油管视频` 源采用 [blackmatrix7/ios_rule_script/YouTube](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/YouTube)  
+⑰ `rule-set,tiktok,🎵 TikTok` 源采用 [blackmatrix7/ios_rule_script/TikTok](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/TikTok)  
+⑱ `rule-set,bilibili,📺 哔哩哔哩` 源采用 [blackmatrix7/ios_rule_script/BiliBili](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/BiliBili)  
+⑲ `rule-set,ai,🤖 人工智能` 源采用 [blackmatrix7/ios_rule_script/OpenAI](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/OpenAI)、[blackmatrix7/ios_rule_script/Copilot](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Copilot)、[blackmatrix7/ios_rule_script/Gemini](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Gemini) 和 [blackmatrix7/ios_rule_script/Claude](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Claude) 组合  
+⑳ `rule-set,networktest,📈 网络测试` 源采用 [v2fly/domain-list-community/speedtest](https://github.com/v2fly/domain-list-community/blob/master/data/speedtest)、[blackmatrix7/ios_rule_script/Speedtest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Speedtest) 和 IPv6 测试域名关键字（`keyword`，包括：`ipv6-test`、`test-ipv6`、`ipv6test` 和 `testipv6`）组合  
+㉑ `rule-set,tracker,📥 Tracker` 源采用 [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅域名）和 [ngosang/trackerslist](https://github.com/ngosang/trackerslist/blob/master/trackers_all.txt) 组合  
 ㉒ `rule-set,tld-proxy,🧱 代理顶级域名` 源采用 [v2fly/domain-list-community/tld-!cn](https://github.com/v2fly/domain-list-community/blob/master/data/tld-!cn)  
 ㉓ `rule-set,proxy,🧱 代理域名` 源采用 [v2fly/domain-list-community/geolocation-!cn](https://github.com/v2fly/domain-list-community/blob/master/data/geolocation-!cn)（删除了带有 `@cn` 和 `@ads` 的域名，并新增了 [v2fly/domain-list-community/cn](https://github.com/v2fly/domain-list-community/blob/master/data/cn) 中带有 `@!cn` 的域名）、[gfwlist](https://github.com/gfwlist/gfwlist) 和 [blackmatrix7/ios_rule_script/Global](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Global) 组合  
 ㉔ `rule-set,tld-cn,🛡️ 直连顶级域名` 源采用 [v2fly/domain-list-community/tld-cn](https://github.com/v2fly/domain-list-community/blob/master/data/tld-cn)  
 ㉕ `rule-set,cn,🛡️ 直连域名` 源采用 [v2fly/domain-list-community/cn](https://github.com/v2fly/domain-list-community/blob/master/data/cn)（删除了带有 `@!cn` 和 `@ads` 的域名，并新增了 v2fly/domain-list-community/geolocation-!cn 中带有 `@cn` 的域名）和 [blackmatrix7/ios_rule_script/ChinaMax](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/ChinaMax)（仅域名）组合  
-㉖ `rule-set,privateip,🔒 私有网络` 源采用 [DustinWin/geoip/config.json](https://github.com/DustinWin/geoip/blob/master/config.json) 中的 `input.type:private` 和 [TrackersList](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅 IP）组合  
-㉗ `rule-set,cnip,🀄️ 直连 IP` 源采用 [GeoLite2-Country-CSV/CN](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)、[17mon/china_ip_list](https://github.com/17mon/china_ip_list)、[gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)、[APNIC/CN](http://ftp.apnic.net/stats/apnic/delegated-apnic-latest) 和 [blackmatrix7/ios_rule_script/ChinaASN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/ChinaASN) 组合  
-㉘ `rule-set,netflixip,🎥 奈飞视频` 源采用 [GeoLite2-ASN-CSV/Netflix](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)（Netflix_IP.txt）组合  
-㉙ `rule-set,telegramip,📲 电报消息` 源采用 [GeoLite2-ASN-CSV/Telegram](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [Telegram IP 段](https://core.telegram.org/resources/cidr.txt)组合
+㉖ `rule-set,netflixip,🎥 奈飞视频` 源采用 [GeoLite2-ASN-CSV/Netflix](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [blackmatrix7/ios_rule_script/Netflix](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Netflix)（Netflix_IP.txt）组合  
+㉗ `geoip,tracker,📥 Tracker` 源采用 [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅 IP）和 [ngosang/trackerslist](https://github.com/ngosang/trackerslist/blob/master/trackers_all_ip.txt) 组合  
+㉘ `rule-set,telegramip,📲 电报消息` 源采用 [GeoLite2-ASN-CSV/Telegram](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 和 [Telegram IP 段](https://core.telegram.org/resources/cidr.txt)组合  
+㉙ `rule-set,privateip,🔒 私有网络` 源采用 [DustinWin/geoip/config.json](https://github.com/DustinWin/geoip/blob/master/config.json) 中的 `input.type:private` 和 [TrackersList](https://github.com/XIU2/TrackersListCollection/blob/master/all.txt)（仅 IP）组合  
+㉚ `rule-set,cnip,🀄️ 直连 IP` 源采用 [GeoLite2-Country-CSV/CN](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)、[17mon/china_ip_list](https://github.com/17mon/china_ip_list)、[gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)、[APNIC/CN](http://ftp.apnic.net/stats/apnic/delegated-apnic-latest) 和 [blackmatrix7/ios_rule_script/ChinaASN](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/ChinaASN) 组合
 ## 3. 文件使用
 <details>
 <summary>① mihomo 内核</summary>
@@ -269,9 +271,10 @@ curl -o %APPDATA%\io.github.clash-verge-rev.clash-verge-rev\ASN.mmdb -L https://
 ```
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
   - {name: 📈 网络测试, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点]}
+  - {name: 📥 Tracker, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
   - {name: 🤖 人工智能, type: select, proxies: [🚀 节点选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点]}
-  - {name: 📥 Trackerslist, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
   - {name: 🎮 游戏服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
   - {name: 🪟 微软服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
   - {name: 🇬 谷歌服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
@@ -292,7 +295,6 @@ proxy-groups:
   - {name: 📲 电报消息, type: select, proxies: [🚀 节点选择]}
   - {name: 🖥️ 直连软件, type: select, proxies: [🎯 全球直连]}
   - {name: 🔒 私有网络, type: select, proxies: [🎯 全球直连]}
-  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
   - {name: 🛑 广告域名, type: select, proxies: [🔴 全球拦截, 🟢 全球绕过]}
   - {name: 🔴 全球拦截, type: select, proxies: [REJECT]}
   - {name: 🟢 全球绕过, type: select, proxies: [PASS]}
@@ -316,6 +318,14 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter-lite.mrs"
     interval: 86400
 
+  applications:
+    type: http
+    behavior: classical
+    format: text
+    path: ./rules/applications.list
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/applications.list"
+    interval: 86400
+
   private:
     type: http
     behavior: domain
@@ -330,22 +340,6 @@ rule-providers:
     format: mrs
     path: ./rules/ads.mrs
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/ads.mrs"
-    interval: 86400
-
-  trackerslist:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/trackerslist.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/trackerslist.mrs"
-    interval: 86400
-
-  applications:
-    type: http
-    behavior: classical
-    format: text
-    path: ./rules/applications.list
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/applications.list"
     interval: 86400
 
   microsoft-cn:
@@ -460,6 +454,14 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/networktest.list"
     interval: 86400
 
+  tracker:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/tracker.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/tracker.mrs"
+    interval: 86400
+
   tld-proxy:
     type: http
     behavior: domain
@@ -492,6 +494,30 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/cn.mrs"
     interval: 86400
 
+  netflixip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    path: ./rules/netflixip.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/netflixip.mrs"
+    interval: 86400
+
+  trackerip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    path: ./rules/trackerip.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/trackerip.mrs"
+    interval: 86400
+
+  telegramip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    path: ./rules/telegramip.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
+    interval: 86400
+
   privateip:
     type: http
     behavior: ipcidr
@@ -508,27 +534,10 @@ rule-providers:
     url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/cnip.mrs"
     interval: 86400
 
-  netflixip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    path: ./rules/netflixip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/netflixip.mrs"
-    interval: 86400
-
-  telegramip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    path: ./rules/telegramip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
-    interval: 86400
-
 rules:
+  - RULE-SET,applications,🖥️ 直连软件
   - RULE-SET,private,🔒 私有网络
   - RULE-SET,ads,🛑 广告域名
-  - RULE-SET,trackerslist,📥 Trackerslist
-  - RULE-SET,applications,🖥️ 直连软件
   - RULE-SET,microsoft-cn,🪟 微软服务
   - RULE-SET,apple-cn,🍎 苹果服务
   - RULE-SET,google-cn,🇬 谷歌服务
@@ -543,14 +552,16 @@ rules:
   - RULE-SET,bilibili,📺 哔哩哔哩
   - RULE-SET,ai,🤖 人工智能
   - RULE-SET,networktest,📈 网络测试
+  - RULE-SET,tracker,📥 Tracker
   - RULE-SET,tld-proxy,🧱 代理顶级域名
   - RULE-SET,proxy,🧱 代理域名
   - RULE-SET,tld-cn,🛡️ 直连顶级域名
   - RULE-SET,cn,🛡️ 直连域名
+  - RULE-SET,netflixip,🎥 奈飞视频,no-resolve
+  - RULE-SET,trackerip,📥 Tracker,no-resolve
+  - RULE-SET,telegramip,📲 电报消息,no-resolve
   - RULE-SET,privateip,🔒 私有网络,no-resolve
   - RULE-SET,cnip,🀄️ 直连 IP
-  - RULE-SET,netflixip,🎥 奈飞视频,no-resolve
-  - RULE-SET,telegramip,📲 电报消息,no-resolve
 ```
 </details>
 <details>
@@ -565,9 +576,10 @@ rules:
 {
   "outbounds": [
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点" ] },
+    { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
     { "tag": "📈 网络测试", "type": "selector", "outbounds": [ "🎯 全球直连", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点" ] },
+    { "tag": "📥 Tracker", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
     { "tag": "🤖 人工智能", "type": "selector", "outbounds": [ "🚀 节点选择", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点" ] },
-    { "tag": "📥 Trackerslist", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🎮 游戏服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🪟 微软服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🇬 谷歌服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
@@ -588,7 +600,6 @@ rules:
     { "tag": "📲 电报消息", "type": "selector", "outbounds": ["🚀 节点选择"] },
     { "tag": "🖥️ 直连软件", "type": "selector", "outbounds": ["🎯 全球直连"] },
     { "tag": "🔒 私有网络", "type": "selector", "outbounds": ["🎯 全球直连"] },
-    { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
     { "tag": "🛑 广告域名", "type": "selector", "outbounds": [ "🔴 全球拦截", "🎯 全球直连" ] },
     { "tag": "🔴 全球拦截", "type": "selector", "outbounds": [ "REJECT" ] },
     { "tag": "🎯 全球直连", "type": "selector", "outbounds": [ "DIRECT"] },
@@ -598,15 +609,14 @@ rules:
   ],
   "route": {
     "rules": [
-      { "rule_set": [ "private" ], "outbound": "🔒 私有网络" },
-      { "rule_set": [ "ads" ], "outbound": "🛑 广告域名" },
-      { "rule_set": [ "trackerslist" ], "outbound": "📥 Trackerslist" },
       { "rule_set": [ "applications" ], "outbound": "🖥️ 直连软件" },
+      { "rule_set": [ "private", "privateip" ], "outbound": "🔒 私有网络", "skip_resolve": true },
+      { "rule_set": [ "ads" ], "outbound": "🛑 广告域名" },
       { "rule_set": [ "microsoft-cn" ], "outbound": "🪟 微软服务" },
       { "rule_set": [ "apple-cn" ], "outbound": "🍎 苹果服务" },
       { "rule_set": [ "google-cn" ], "outbound": "🇬 谷歌服务" },
       { "rule_set": [ "games-cn" ], "outbound": "🎮 游戏服务" },
-      { "rule_set": [ "netflix" ], "outbound": "🎥 奈飞视频" },
+      { "rule_set": [ "netflix", "netflixip" ], "outbound": "🎥 奈飞视频", "skip_resolve": true },
       { "rule_set": [ "disney" ], "outbound": "📽️ 迪士尼+" },
       { "rule_set": [ "max" ], "outbound": "🎞️ Max" },
       { "rule_set": [ "primevideo" ], "outbound": "🎬 Prime Video" },
@@ -616,14 +626,13 @@ rules:
       { "rule_set": [ "bilibili" ], "outbound": "📺 哔哩哔哩" },
       { "rule_set": [ "ai" ], "outbound": "🤖 人工智能" },
       { "rule_set": [ "networktest" ], "outbound": "📈 网络测试" },
+      { "rule_set": [ "tracker", "trackerip" ], "outbound": "📥 Tracker", "skip_resolve": true },
       { "rule_set": [ "tld-proxy" ], "outbound": "🧱 代理顶级域名" },
       { "rule_set": [ "proxy" ], "outbound": "🧱 代理域名" },
       { "rule_set": [ "tld-cn" ], "outbound": "🛡️ 直连顶级域名" },
       { "rule_set": [ "cn" ], "outbound": "🛡️ 直连域名" },
-      { "rule_set": [ "privateip" ], "outbound": "🔒 私有网络", "skip_resolve": true },
-      { "rule_set": [ "cnip" ], "outbound": "🀄️ 直连 IP" },
-      { "rule_set": [ "netflixip" ], "outbound": "🎥 奈飞视频", "skip_resolve": true },
-      { "rule_set": [ "telegramip" ], "outbound": "📲 电报消息", "skip_resolve": true }
+      { "rule_set": [ "telegramip" ], "outbound": "📲 电报消息", "skip_resolve": true },
+      { "rule_set": [ "cnip" ], "outbound": "🀄️ 直连 IP" }
     ],
     "rule_set": [
       // 任选一
@@ -643,6 +652,13 @@ rules:
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/fakeip-filter-lite.srs"
       },
       {
+        "tag": "applications",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/applications.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/applications.srs"
+      },
+      {
         "tag": "private",
         "type": "remote",
         "format": "binary",
@@ -650,25 +666,18 @@ rules:
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/private.srs"
       },
       {
+        "tag": "privateip",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/privateip.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
+      },
+      {
         "tag": "ads",
         "type": "remote",
         "format": "binary",
         "path": "./ruleset/ads.srs",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
-      },
-      {
-        "tag": "trackerslist",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/trackerslist.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/trackerslist.srs"
-      },
-      {
-        "tag": "applications",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/applications.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/applications.srs"
       },
       {
         "tag": "microsoft-cn",
@@ -704,6 +713,13 @@ rules:
         "format": "binary",
         "path": "./ruleset/netflix.srs",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflix.srs"
+      },
+      {
+        "tag": "netflixip",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/netflixip.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflixip.srs"
       },
       {
         "tag": "disney",
@@ -769,6 +785,20 @@ rules:
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/networktest.srs"
       },
       {
+        "tag": "tracker",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/tracker.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/tracker.srs"
+      },
+      {
+        "tag": "trackerip",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/trackerip.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/trackerip.srs"
+      },
+      {
         "tag": "tld-proxy",
         "type": "remote",
         "format": "binary",
@@ -797,11 +827,11 @@ rules:
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
       },
       {
-        "tag": "privateip",
+        "tag": "telegramip",
         "type": "remote",
         "format": "binary",
-        "path": "./ruleset/privateip.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
+        "path": "./ruleset/telegramip.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
       },
       {
         "tag": "cnip",
@@ -809,20 +839,6 @@ rules:
         "format": "binary",
         "path": "./ruleset/cnip.srs",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
-      },
-      {
-        "tag": "netflixip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/netflixip.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflixip.srs"
-      },
-      {
-        "tag": "telegramip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/telegramip.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
       }
     ]
   }
